@@ -26,7 +26,9 @@ No tuition. No gatekeeping. Just mathematics, curiosity, and a community of lear
 | 🎓 **Program** | Free College |
 | 📖 **Course** | Stochastic Processes |
 | 📅 **Duration** | 16 instructional weeks + orientation |
+| ⏱️ **Lecture Schedule** | 1 lecture per week |
 | ⏱️ **Lecture Length** | 75 minutes |
+| 🎥 **Total Lectures** | 16 |
 | 🧮 **Level** | Upper-Level Undergraduate |
 | 📕 **Textbook** | *Introduction to Probability Models*, Sheldon M. Ross, 10th Edition |
 | 💻 **Format** | Lectures, mathematical derivations, exercises, and computational demonstrations |
@@ -71,12 +73,12 @@ We'll briefly review essential probability concepts before moving into stochasti
 
 The course is organized into five major units.
 
-| Unit | Weeks | Topics |
+| Unit | Lectures | Topics |
 |---|---|---|
 | **I. Foundations & Markov Chains** | 1–7 | Probability review, discrete-time Markov chains, recurrence, stationary distributions, random walks, reversibility |
-| **II. Poisson Processes** | 7–10 | Exponential distributions, Poisson arrivals, thinning, superposition, nonhomogeneous and compound Poisson processes |
-| **III. Continuous-Time Markov Chains** | 10–13 | Generator matrices, birth–death processes, Kolmogorov equations, stationary distributions |
-| **IV. Renewal & Queueing Theory** | 13–15 | Renewal processes, renewal reward theorem, Little's law, M/M/1 queues |
+| **II. Poisson Processes** | 8–10 | Exponential distributions, Poisson arrivals, thinning, superposition, nonhomogeneous and compound Poisson processes |
+| **III. Continuous-Time Markov Chains** | 11–13 | Generator matrices, birth–death processes, Kolmogorov equations, stationary distributions |
+| **IV. Renewal & Queueing Theory** | 14–15 | Renewal processes, renewal reward theorem, Little's law, M/M/1 queues |
 | **V. Brownian Motion & Synthesis** | 16 | Brownian motion, drift, diffusion, and connections across stochastic models |
 
 ### Course Progress Tracker
@@ -84,160 +86,403 @@ The course is organized into five major units.
 Use this checklist to track your progress throughout the semester.
 
 - [ ] **Week 0:** Orientation, syllabus, resources, GitHub, and probability review
-- [ ] **Week 1:** Foundations of stochastic processes
-- [ ] **Week 2:** Discrete-time Markov chains
-- [ ] **Week 3:** State classification
-- [ ] **Week 4:** Stationary and limiting behavior
-- [ ] **Week 5:** Random walks and absorption
-- [ ] **Week 6:** Reversibility and Markov chain review
-- [ ] **Week 7:** Midterm 1 and exponential distributions
-- [ ] **Week 8:** Poisson process fundamentals
-- [ ] **Week 9:** Advanced Poisson processes
-- [ ] **Week 10:** Compound Poisson processes and CTMC introduction
-- [ ] **Week 11:** Birth–death processes and Kolmogorov equations
-- [ ] **Week 12:** CTMC long-run behavior
-- [ ] **Week 13:** Midterm 2 and renewal processes
-- [ ] **Week 14:** Renewal theorems and rewards
-- [ ] **Week 15:** Queueing theory
-- [ ] **Week 16:** Brownian motion and course synthesis
+- [ ] **Lecture 1:** Foundations of stochastic processes
+- [ ] **Lecture 2:** Discrete-time Markov chains
+- [ ] **Lecture 3:** State classification
+- [ ] **Lecture 4:** Stationary and limiting behavior
+- [ ] **Lecture 5:** Random walks and absorption
+- [ ] **Lecture 6:** Reversibility and Markov chain review
+- [ ] **Lecture 7:** Midterm I and exponential distributions
+- [ ] **Lecture 8:** Poisson process fundamentals
+- [ ] **Lecture 9:** Advanced Poisson processes
+- [ ] **Lecture 10:** Compound Poisson processes and CTMC introduction
+- [ ] **Lecture 11:** Birth–death processes and Kolmogorov equations
+- [ ] **Lecture 12:** CTMC long-run behavior
+- [ ] **Lecture 13:** Midterm II and renewal processes
+- [ ] **Lecture 14:** Renewal theorems and rewards
+- [ ] **Lecture 15:** Queueing theory
+- [ ] **Lecture 16:** Brownian motion and course synthesis
 
 ---
 
 ## 📅 Weekly Lecture Schedule
 
-Each instructional week contains two planned 75-minute lecture blocks. Topics progress from foundational probability concepts toward continuous-time models and applications.
+The course consists of **16 lectures delivered over 16 instructional weeks**, with one comprehensive **75-minute lecture per week**.
+
+Each lecture combines two closely related topics into a single session, allowing students to develop a unified understanding of the material.
+
+Topics progress from foundational probability concepts toward discrete-time Markov chains, continuous-time stochastic processes, renewal theory, queueing theory, and Brownian motion.
 
 ### Unit I — Foundations & Discrete-Time Markov Chains
 
-*Weeks 1–7*
+*Lectures 1–7*
 
-**Week 1 — Foundations of Stochastic Processes**
+#### Lecture 1 — Foundations of Stochastic Processes
 
-- **Lecture 1:** Introduction to stochastic processes and probability refresher
-- **Lecture 2:** Conditional probability, expectation, and first-step analysis
+**Week 1 | 75 Minutes**
 
-Define stochastic processes, sample paths, time spaces, and state spaces. Review essential probability concepts and derive first-step recursions using conditional expectation.
+**Combined Topics:** Introduction to Stochastic Processes, Probability Review, Conditional Expectation, and First-Step Analysis
 
-**Week 2 — Discrete-Time Markov Chains**
+This lecture establishes the mathematical foundations of stochastic processes by reviewing essential probability concepts and introducing the tools used to analyze random systems.
 
-- **Lecture 1:** The Markov property and transition matrices
-- **Lecture 2:** Chapman–Kolmogorov equations
+Topics include:
 
-Construct transition diagrams, calculate multi-step transition probabilities, and evolve probability distributions using matrix powers.
+- Probability spaces, events, and random variables
+- Conditional probability and independence
+- Expected values, variance, and covariance
+- Conditional expectation and the law of total expectation
+- Definition of a stochastic process
+- Discrete-time and continuous-time processes
+- State spaces and sample paths
+- Introduction to first-step analysis
 
-**Week 3 — Classification of States**
+**Learning Objective:** Define stochastic processes and apply foundational probability concepts to analyze random systems using conditional expectation and first-step reasoning.
 
-- **Lecture 1:** Communication, recurrence, and transience
-- **Lecture 2:** Periodicity and absorbing chains
+#### Lecture 2 — Discrete-Time Markov Chains
 
-Classify communicating classes, identify recurrent and transient states, determine periods, and formulate absorption probabilities.
+**Week 2 | 75 Minutes**
 
-**Week 4 — Stationary & Limiting Behavior**
+**Combined Topics:** The Markov Property, Transition Matrices, and Chapman–Kolmogorov Equations
 
-- **Lecture 1:** Stationary distributions
-- **Lecture 2:** Limiting probabilities and long-run behavior
+This lecture introduces discrete-time Markov chains and develops the matrix-based framework used to describe their evolution.
 
-Solve stationary distribution equations, distinguish equilibrium from limiting behavior, and introduce long-run rewards.
+Topics include:
 
-**Week 5 — Random Walks & Absorption**
+- Definition of a discrete-time Markov chain
+- The Markov property
+- State spaces and transition diagrams
+- One-step transition probabilities
+- Transition probability matrices
+- Multi-step transition probabilities
+- Chapman–Kolmogorov equations
+- Matrix powers and probability distributions
 
-- **Lecture 1:** Gambler's ruin
-- **Lecture 2:** Hitting times and absorption times
+**Learning Objective:** Construct discrete-time Markov chains and calculate their evolution using transition matrices and Chapman–Kolmogorov equations.
 
-Analyze absorbing random walks, derive ruin probabilities, and calculate expected hitting times through first-step equations.
+#### Lecture 3 — Classification of Markov Chain States
 
-**Week 6 — Reversibility & Review**
+**Week 3 | 75 Minutes**
 
-- **Lecture 1:** Time reversibility and detailed balance
-- **Lecture 2:** Markov chain synthesis and computational review
+**Combined Topics:** Communication, Recurrence, Transience, Periodicity, and Absorbing Chains
 
-Study reversible chains and random walks on graphs. Integrate the major Markov-chain methods and check selected results with simulation.
+This lecture investigates the structural properties of Markov chains and how those properties influence long-run behavior.
 
-**Week 7 — Midterm I & Exponential Distributions**
+Topics include:
 
-- **Lecture 1:** Midterm Exam I — Discrete-Time Markov Chains
-- **Lecture 2:** Exponential waiting times and memorylessness
+- Accessibility and communication between states
+- Communicating classes
+- Irreducible Markov chains
+- Recurrent states
+- Transient states
+- Periodicity and aperiodicity
+- Absorbing states
+- Absorbing Markov chains
 
-Assess Markov-chain concepts before transitioning to continuous-time probability models through exponential waiting times and competing exponential clocks.
+**Learning Objective:** Classify states within a Markov chain and determine how recurrence, transience, periodicity, and absorption affect its behavior.
+
+#### Lecture 4 — Stationary Distributions and Long-Run Behavior
+
+**Week 4 | 75 Minutes**
+
+**Combined Topics:** Stationary Distributions, Limiting Probabilities, and Long-Run Behavior
+
+This lecture explores the equilibrium and asymptotic properties of discrete-time Markov chains.
+
+Topics include:
+
+- Stationary probability distributions
+- Solving the stationary equation \(\pi P=\pi\)
+- Interpretation of stationary probabilities
+- Limiting probability distributions
+- Conditions for convergence
+- Irreducibility and aperiodicity
+- Long-run proportions of time spent in states
+- Introduction to long-run rewards
+
+**Learning Objective:** Calculate stationary distributions and distinguish between equilibrium probabilities and limiting behavior.
+
+#### Lecture 5 — Random Walks and Absorption
+
+**Week 5 | 75 Minutes**
+
+**Combined Topics:** Gambler's Ruin, Hitting Times, and Absorption Times
+
+This lecture applies Markov-chain methods to random walks, ruin problems, and absorbing stochastic systems.
+
+Topics include:
+
+- Simple random walks
+- Symmetric and asymmetric random walks
+- Gambler's ruin
+- Absorption probabilities
+- First-step recurrence equations
+- Hitting probabilities
+- Expected hitting times
+- Expected absorption times
+
+**Learning Objective:** Derive absorption probabilities and expected hitting times for random walks and absorbing Markov chains.
+
+#### Lecture 6 — Time Reversibility and Markov Chain Review
+
+**Week 6 | 75 Minutes**
+
+**Combined Topics:** Time Reversibility, Detailed Balance, and Computational Review
+
+This lecture introduces reversible Markov chains and consolidates the major concepts developed throughout the discrete-time portion of the course.
+
+Topics include:
+
+- Time-reversed Markov chains
+- Detailed balance equations
+- Reversible Markov chains
+- Stationary distributions and reversibility
+- Random walks on graphs
+- State classification review
+- Stationary and limiting distributions review
+- Hitting times and absorption review
+- Computational Markov-chain simulations
+
+**Learning Objective:** Analyze reversible Markov chains and synthesize the mathematical techniques used to study discrete-time stochastic systems.
+
+#### Lecture 7 — Midterm I and Exponential Distributions
+
+**Week 7 | 75 Minutes**
+
+**Combined Topics:** Midterm Examination I, Exponential Waiting Times, and Memorylessness
+
+This session combines the first midterm assessment with an introduction to exponential waiting times and continuous-time probability models.
+
+Topics include:
+
+- **Midterm I:** Probability foundations and discrete-time Markov chains
+- Exponential probability distributions
+- Probability density and survival functions
+- The memoryless property
+- Expected exponential waiting times
+- Competing exponential clocks
+- Motivation for continuous-time stochastic processes
+
+**Learning Objective:** Demonstrate understanding of discrete-time Markov chains and develop familiarity with exponential waiting times as the foundation of continuous-time stochastic models.
+
+---
 
 ### Unit II — Poisson Processes
 
-*Weeks 8–10*
+*Lectures 8–10*
 
-**Week 8 — The Poisson Process**
+#### Lecture 8 — Fundamentals of Poisson Processes
 
-- **Lecture 1:** Counting processes and Poisson arrivals
-- **Lecture 2:** Interarrival times and waiting times
+**Week 8 | 75 Minutes**
 
-Define the homogeneous Poisson process, derive arrival-count probabilities, and connect exponential interarrival times to Poisson counts.
+**Combined Topics:** Counting Processes, Poisson Arrivals, Interarrival Times, and Waiting Times
 
-**Week 9 — Advanced Poisson Processes**
+This lecture introduces the Poisson process and develops its connection to exponential waiting times.
 
-- **Lecture 1:** Superposition, thinning, and conditional arrivals
-- **Lecture 2:** Nonhomogeneous Poisson processes
+Topics include:
 
-Analyze combinations and subdivisions of Poisson streams, conditional arrival times, and time-dependent arrival intensities.
+- Counting processes
+- Homogeneous Poisson processes
+- Independent increments
+- Stationary increments
+- Poisson arrival-count distributions
+- Exponential interarrival times
+- Waiting time until the next arrival
+- Waiting time until the \(n\)th arrival
 
-**Week 10 — Compound Poisson Processes & CTMCs**
+**Learning Objective:** Model random arrivals using Poisson processes and explain the relationship between arrival counts and exponential waiting times.
 
-- **Lecture 1:** Compound Poisson processes
-- **Lecture 2:** Introduction to continuous-time Markov chains
+#### Lecture 9 — Advanced Poisson Processes
 
-Model aggregate random sums and their moments. Introduce exponential holding times, transition rates, and generator matrices.
+**Week 9 | 75 Minutes**
+
+**Combined Topics:** Superposition, Thinning, Conditional Arrivals, and Nonhomogeneous Poisson Processes
+
+This lecture extends the basic Poisson process to more general arrival systems.
+
+Topics include:
+
+- Superposition of independent Poisson processes
+- Thinning of Poisson processes
+- Random classification of arrivals
+- Conditional arrival-time distributions
+- Order statistics of arrival times
+- Nonhomogeneous Poisson processes
+- Time-dependent intensity functions
+- Cumulative intensity functions
+
+**Learning Objective:** Analyze Poisson systems with multiple arrival streams, random event classifications, and time-varying arrival rates.
+
+#### Lecture 10 — Compound Poisson Processes and Continuous-Time Markov Chains
+
+**Week 10 | 75 Minutes**
+
+**Combined Topics:** Compound Poisson Processes and Introduction to Continuous-Time Markov Chains
+
+This lecture connects random aggregate processes with the mathematical framework of continuous-time Markov chains.
+
+Topics include:
+
+- Compound Poisson processes
+- Random sums
+- Aggregate event sizes
+- Expectation of compound Poisson sums
+- Variance of compound Poisson sums
+- Definition of a continuous-time Markov chain
+- Exponential holding times
+- Transition rates
+- Generator matrices
+
+**Learning Objective:** Analyze compound Poisson models and construct basic continuous-time Markov chains using transition rates and generator matrices.
+
+---
 
 ### Unit III — Continuous-Time Markov Chains
 
-*Weeks 11–13*
+*Lectures 11–13*
 
-**Week 11 — Birth–Death Processes & Kolmogorov Equations**
+#### Lecture 11 — Birth–Death Processes and Kolmogorov Equations
 
-- **Lecture 1:** Birth–death processes
-- **Lecture 2:** Kolmogorov forward and backward equations
+**Week 11 | 75 Minutes**
 
-Construct state-dependent transition-rate models and derive differential equations governing continuous-time transition probabilities.
+**Combined Topics:** Birth–Death Processes and Kolmogorov Forward and Backward Equations
 
-**Week 12 — Long-Run CTMC Behavior**
+This lecture develops continuous-time models with state-dependent transitions and introduces the differential equations governing their behavior.
 
-- **Lecture 1:** Stationary distributions for CTMCs
-- **Lecture 2:** Reversibility and CTMC review
+Topics include:
 
-Solve global balance equations, apply detailed balance, and compare analytical predictions with simulation.
+- Birth–death processes
+- Birth rates and death rates
+- State-dependent transition intensities
+- Generator matrices for birth–death systems
+- Kolmogorov forward equations
+- Kolmogorov backward equations
+- Transition probability differential equations
+- Examples of continuous-time stochastic models
 
-**Week 13 — Midterm II & Renewal Processes**
+**Learning Objective:** Construct birth–death processes and derive the Kolmogorov equations describing continuous-time transition probabilities.
 
-- **Lecture 1:** Midterm Exam II — Poisson Processes and CTMCs
-- **Lecture 2:** Introduction to renewal processes
+#### Lecture 12 — Stationary Behavior and Reversibility of CTMCs
 
-Assess continuous-time models before introducing renewal epochs, renewal counts, and general interarrival distributions.
+**Week 12 | 75 Minutes**
 
-### Unit IV — Renewal Processes & Queueing Theory
+**Combined Topics:** Stationary Distributions, Detailed Balance, Reversibility, and CTMC Review
 
-*Weeks 14–15*
+This lecture examines the long-run behavior of continuous-time Markov chains and reviews the major techniques used to analyze them.
 
-**Week 14 — Renewal Theory**
+Topics include:
 
-- **Lecture 1:** Elementary renewal theorem
-- **Lecture 2:** Renewal reward processes
+- Stationary distributions of CTMCs
+- Global balance equations
+- Solving \(\pi Q=0\)
+- Birth–death stationary distributions
+- Detailed balance in continuous time
+- Reversible continuous-time Markov chains
+- Long-run state probabilities
+- Computational simulation and verification
+- Review of Poisson processes and CTMCs
 
-Analyze long-run event frequencies and use renewal reward methods to calculate average rewards, costs, and replacement rates.
+**Learning Objective:** Calculate stationary distributions of continuous-time Markov chains and apply balance equations to analyze long-run behavior.
 
-**Week 15 — Queueing Theory**
+#### Lecture 13 — Midterm II and Introduction to Renewal Processes
 
-- **Lecture 1:** Queueing models and Little's law
-- **Lecture 2:** M/M/1 and finite-capacity queues
+**Week 13 | 75 Minutes**
 
-Introduce arrival and service rates, utilization, and Kendall notation. Derive basic queue performance measures and study stability and blocking.
+**Combined Topics:** Midterm Examination II and Renewal Process Fundamentals
 
-### Unit V — Brownian Motion & Course Synthesis
+This session combines the second midterm assessment with an introduction to renewal theory.
 
-*Week 16*
+Topics include:
 
-**Week 16 — Brownian Motion**
+- **Midterm II:** Exponential distributions, Poisson processes, and continuous-time Markov chains
+- Renewal processes
+- Renewal epochs
+- Interarrival-time distributions
+- Renewal counting processes
+- General renewal processes
+- Relationship between Poisson and renewal processes
 
-- **Lecture 1:** Introduction to Brownian motion
-- **Lecture 2:** Brownian motion with drift and course synthesis
+**Learning Objective:** Demonstrate understanding of continuous-time stochastic models and introduce the renewal-process framework for repeated random events.
 
-Define Brownian motion, study Gaussian independent increments, and compute mean and covariance functions. Introduce drift and diffusion while connecting the major stochastic models studied throughout the semester.
+---
+
+### Unit IV — Renewal Processes and Queueing Theory
+
+*Lectures 14–15*
+
+#### Lecture 14 — Renewal Theory and Renewal Reward Processes
+
+**Week 14 | 75 Minutes**
+
+**Combined Topics:** Elementary Renewal Theorem and Renewal Reward Processes
+
+This lecture develops long-run results for renewal systems and introduces the renewal reward framework.
+
+Topics include:
+
+- Renewal counting processes
+- Renewal functions
+- Elementary renewal theorem
+- Long-run renewal rates
+- Renewal reward processes
+- Expected rewards per cycle
+- Long-run average reward rates
+- Replacement and maintenance models
+- Long-run cost analysis
+
+**Learning Objective:** Apply renewal theory and renewal reward methods to calculate long-run event frequencies, rewards, and costs.
+
+#### Lecture 15 — Queueing Theory
+
+**Week 15 | 75 Minutes**
+
+**Combined Topics:** Queueing Models, Little's Law, M/M/1 Queues, and Finite-Capacity Systems
+
+This lecture introduces stochastic queueing systems and develops analytical methods for evaluating service-system performance.
+
+Topics include:
+
+- Fundamentals of queueing theory
+- Arrival rates and service rates
+- Kendall notation
+- Server utilization
+- Little's law: \(L=\lambda W\)
+- M/M/1 queueing systems
+- Queue stability conditions
+- Expected queue lengths
+- Expected waiting times
+- Finite-capacity queues
+- Blocking probabilities
+
+**Learning Objective:** Analyze queueing systems using Little's law, birth–death models, and M/M/1 performance formulas.
+
+---
+
+### Unit V — Brownian Motion and Course Synthesis
+
+*Lecture 16*
+
+#### Lecture 16 — Brownian Motion and Course Synthesis
+
+**Week 16 | 75 Minutes**
+
+**Combined Topics:** Introduction to Brownian Motion, Brownian Motion with Drift, and Course Synthesis
+
+The final lecture introduces Brownian motion as a fundamental continuous-path stochastic process and connects the major concepts studied throughout the semester.
+
+Topics include:
+
+- Definition of standard Brownian motion
+- Continuous sample paths
+- Gaussian increments
+- Independent increments
+- Mean and covariance functions
+- Brownian motion with drift
+- Diffusion coefficients
+- Connections between random walks and Brownian motion
+- Comparison of discrete-time and continuous-time stochastic processes
+- Final course synthesis and review
+
+**Learning Objective:** Understand the defining properties of Brownian motion and recognize the connections among the stochastic models developed throughout the course.
 
 **Scope:** Brownian motion is treated as an introduction to continuous-path stochastic processes. Stochastic integration, Itô's lemma, and stochastic differential equations are outside the core scope of this course.
 
@@ -303,8 +548,10 @@ The course includes two planned midterm assessments.
 
 | Assessment | Timing | Primary Coverage |
 |---|---|---|
-| **Midterm I** | Week 7 | Probability foundations and discrete-time Markov chains |
-| **Midterm II** | Week 13 | Exponential distributions, Poisson processes, and CTMCs |
+| **Midterm I** | Week 7 / Lecture 7 | Probability foundations and discrete-time Markov chains |
+| **Midterm II** | Week 13 / Lecture 13 | Exponential distributions, Poisson processes, and CTMCs |
+
+Both midterms are incorporated into their respective weekly lecture sessions.
 
 Students are encouraged to practice by deriving formulas, solving textbook exercises, constructing examples, and testing mathematical predictions with simulations.
 
@@ -316,31 +563,34 @@ The goal is not merely to memorize formulas, but to understand **why stochastic 
 
 The following is a suggested organization for course materials as they become available.
 
+Each lecture corresponds to one instructional week.
+
 ```text
 free-college-stochastic-processes/
 │
 ├── README.md
+│
 ├── syllabus/
 │   └── syllabus.md
 │
 ├── lectures/
-│   ├── week-00-orientation/
-│   ├── week-01-foundations/
-│   ├── week-02-markov-chains/
-│   ├── week-03-state-classification/
-│   ├── week-04-stationary-distributions/
-│   ├── week-05-random-walks/
-│   ├── week-06-reversibility/
-│   ├── week-07-exponential-distributions/
-│   ├── week-08-poisson-processes/
-│   ├── week-09-advanced-poisson/
-│   ├── week-10-compound-poisson-ctmc/
-│   ├── week-11-birth-death-processes/
-│   ├── week-12-ctmc-long-run/
-│   ├── week-13-renewal-introduction/
-│   ├── week-14-renewal-theory/
-│   ├── week-15-queueing-theory/
-│   └── week-16-brownian-motion/
+│   ├── lecture-00-orientation/
+│   ├── lecture-01-foundations/
+│   ├── lecture-02-markov-chains/
+│   ├── lecture-03-state-classification/
+│   ├── lecture-04-stationary-distributions/
+│   ├── lecture-05-random-walks/
+│   ├── lecture-06-reversibility/
+│   ├── lecture-07-exponential-distributions/
+│   ├── lecture-08-poisson-processes/
+│   ├── lecture-09-advanced-poisson/
+│   ├── lecture-10-compound-poisson-ctmc/
+│   ├── lecture-11-birth-death-processes/
+│   ├── lecture-12-ctmc-long-run/
+│   ├── lecture-13-renewal-introduction/
+│   ├── lecture-14-renewal-theory/
+│   ├── lecture-15-queueing-theory/
+│   └── lecture-16-brownian-motion/
 │
 ├── notebooks/
 ├── exercises/
@@ -354,15 +604,17 @@ Materials, notebooks, exercises, and supporting resources can be added increment
 
 ## 🚀 Getting Started
 
-**1. Review the prerequisites**
+### 1. Review the Prerequisites
 
 Make sure you're comfortable with introductory probability, calculus, and basic linear algebra.
 
-**2. Get the textbook**
+### 2. Get the Textbook
 
-The primary reference is Ross's *Introduction to Probability Models*, 10th Edition. Access to the textbook is recommended, but the course's original materials can be studied independently as they become available.
+The primary reference is Ross's *Introduction to Probability Models*, 10th Edition.
 
-**3. Clone the repository**
+Access to the textbook is recommended, but the course's original materials can be studied independently as they become available.
+
+### 3. Clone the Repository
 
 ```bash
 git clone <repository-url>
@@ -371,7 +623,7 @@ cd free-college-stochastic-processes
 
 Replace `<repository-url>` with the actual GitHub repository URL.
 
-**4. Set up Python (optional)**
+### 4. Set Up Python (Optional)
 
 ```bash
 python -m venv .venv
@@ -383,13 +635,19 @@ Install the recommended scientific computing packages:
 pip install numpy scipy matplotlib jupyter
 ```
 
-**5. Begin with Week 0**
+### 5. Begin with Week 0
 
-Review the syllabus, familiarize yourself with the repository, and complete the probability refresher before starting Week 1.
+Review the syllabus, familiarize yourself with the repository, and complete the probability refresher before starting Lecture 1.
 
-**6. Learn actively**
+### 6. Follow the Weekly Lectures
 
-Follow the lectures, work through derivations by hand, attempt exercises, and experiment with simulations.
+Complete **one 75-minute lecture per week**.
+
+Each lecture combines the two original weekly topics into a unified session.
+
+### 7. Learn Actively
+
+Work through derivations by hand, attempt exercises, and experiment with simulations.
 
 ---
 
